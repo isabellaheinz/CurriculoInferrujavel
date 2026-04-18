@@ -46,15 +46,23 @@
             width: 80%;
             padding: 2% 0;
             line-height: 1.5;
+            background-color:  rgba(251, 207, 213, 0.896);
 
             p {
                 text-indent: 20px;;
             }
         }
 
+        main {
+            background-color: rgba(240, 255, 252, 0.622);
+            padding: 2%;
+            border-radius: 3%;
+            box-shadow: 0px 0px 10px rgb(112, 108, 110);
+        }
+
         .Fotos {
             width: 100%;
-            height: 400px;
+            height: 40%;
             display: flex;
             justify-content: space-evenly;
             
@@ -66,13 +74,15 @@
 
         .Titulo {
             text-align: center;
-            font-size: 30px;
+            font-size: 25px;
+            
             color: rgb(253, 174, 186);
             text-shadow: 1px 1px 2px rgb(174, 95, 113);
         }
 
-         h2 {
+        h2 {
                 font-size: 30px;
+                margin-bottom: 10px; 
             }
 
         .Perfil {
@@ -81,20 +91,12 @@
             margin: 20px;
             padding: 15px;
 
-            h2 {
-              margin-bottom: 10px;  
-            }
         }
 
         .Competencias {
             border-top: 2px dotted gray;
-
             margin: 20px;
             padding: 15px;
-
-            h2 {
-              margin-bottom: 10px;  
-            }
 
             ul {
                 margin-left: 40px;
@@ -103,15 +105,71 @@
 
         .Formacao {
             border-top: 2px dotted gray;
-
             margin: 20px;
             padding: 15px;
 
-            h2 {
-              margin-bottom: 10px;  
+            a {
+                color: rgb(211, 112, 127);
+            }
+
+        }
+
+        .experiencias {
+            border-top: 2px dotted gray;
+            margin: 20px;
+            padding: 15px;
+
+             ol {
+                margin-left: 40px;
+            }
+
+            ul {
+                margin-left: 20px;
+                margin-bottom: 10px;
             }
         }
 
+        .botao {
+
+            width: 35%;
+            border-radius: 15px;
+            background-color: rgba(251, 207, 213, 0.896);
+            margin-left: 30px;
+            margin-top: -20px;
+            
+            a {
+                text-decoration: none;
+                color: rgb(255, 255, 255);
+            }
+
+            h3 {
+                padding: 10px;
+                text-align: center;
+                
+            }
+
+        }
+
+        .botao h3:hover {
+            background-color: rgb(224, 114, 147);
+             border-radius: 15px;
+             font-size: larger;
+        }
+
+        .contato {
+            border-top: 2px dotted gray;
+            margin: 20px;
+            padding: 15px;
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+            
+            a:hover {
+                color: rgb(224, 114, 147);
+            }
+        }
 
     </style>
 
@@ -122,42 +180,81 @@
     
     <main>
 
-        <section>
-            <div class="Fotos">
+        <section class="Fotos">
                 <img src="Imagens/Lumina1.png" alt="">
                 <img src="Imagens/Lumina2.png" alt="">
                 <img src="Imagens/Lumina3.png" alt="">
-            </div>
         </section>
 
         <section class="Titulo">
-            <h1 class="fonteTitulo"><i class="bi bi-geo-alt-fill"></i>Currículo de Lumina BubbleGum</h1>
+            <h1 class="fonteTitulo"><i class="bi bi-gear"></i> Currículo de Lumina BubbleGum</h1>
         </section>
 
         <section class="Perfil">
             <h2 class="fonteTitulo">Perfil</h2>
-            <p class="fonteTexto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo quae amet voluptate aperiam beatae. Adipisci fugiat odio quos consequatur? Possimus minima commodi repellat dolor nesciunt quidem necessitatibus magnam fuga suscipit.
-            Dignissimos officiis rem ducimus animi necessitatibus consequuntur autem ut blanditiis labore magni modi dicta, earum quam laborum. Qui dolores voluptas hic et odio itaque sapiente quos excepturi nemo. Facilis, eius.</p>
+            <p class="fonteTexto">Sou a Lumina BubbleGum. Me destaco na parte de atuação em Back-End, tendo trabalhado na Google por 3 anos consecutivos. Utilizo linguagem C, C++ e Java, e domino CSS e HTMl no Front-End. Participei de congressos Nacionais de tecnologia e Programação pela UERRB e internacionais representando a UCR. 
+             </p>
+             <p class="fonteTexto">
+                Na parte de manutenção e criação de softwares para automação de robos, fiquei em Primeiro Lugar na ONSR - Olimpiada Nacional de Softwares para Robôs. Adiquiri minhas experiências durante 9 anos. Neste momento estou desenvolvendo melhores habilidades em desenvolvimento de Inteligência Artificial para programação autonoma de robôs.
+             </p>
         </section>
 
         <section class="Competencias">
             <h2 class="fonteTitulo">Principais Competências</h2>
         
-            <p>
                 <ul class="fonteTexto">
+                    <li>240hr do Curso: Manutenção e Criação de Softwares para automação de Robôs</li>
                     <li>Programadora Full-Stack</li>
-                    <li>Engenheira da Compuatação</li>
+                    <li>Engenheira da Computação</li>
                     <li>Mestra em Desen. Web e Mobile</li>
                     <li>Doutora em Inteligência Artificial</li>
                 </ul>
-            </p>
+
         </section>
 
         <section class="Formacao">
             <h2 class="fonteTitulo">Formação Acadêmica</h2>
 
-            <p class="fonteTexto">Graduação em Desenvolvimento para web pela <a href="">UERRB - Universidade Estadual da Roraíma de Robos do Brasil</a>, Engenharia de Compuação pela <a href="">UCR - University of California for Robots</a>, Mestrado em Desenvolvimento Web e Mobile pela <a href="">UFRSR - Universidade Federal do Rio Grande do Sul para Robôs</a> e Doutorado em Intêligencia Artificial pelo <a href="">ITAR - ITA para Robôs</a>.</p>
+            <p class="fonteTexto">Graduação em Desenvolvimento para web pela <a href="https://ufrr.br/" target="_blank" >UERRB - Universidade Estadual da Roraíma de Robôs do Brasil</a> 2015, Engenharia de Compuação pela <a href="https://www.universityofcalifornia.edu/" target="_blank">UCR - University of California for Robots</a> 2018, Mestrado em Desenvolvimento Web e Mobile pela <a href="https://www.ufrgs.br/site/" target="_blank">UFRSR - Universidade Federal do Rio Grande do Sul para Robôs</a> 2020 e Doutorado em Intêligencia Artificial pelo <a href="http://www.ita.br/" target="_blank">ITAR - ITA para Robôs</a> 2024.</p>
         </section>
+
+        <section class="experiencias">
+            <h2 class="fonteTitulo">Experiências Proficional </h2>
+                <ol class="fonteTexto"> 
+                    <li>Estágio na ClearMe-up. 2017 - 2018</li>
+                        <ul>
+                            <li>Limpeza de robôs.</li>
+                            <li>Manutenção de programação de robôs.</li>
+                        </ul>
+
+                    <li>IFOOD. 2019-2021</li>
+                        <ul>
+                            <li>Programação Front-End: HTML e CSS.</li>
+                            <li>Programação Back-End: C, C++ e Java.</li>
+                        </ul>
+                    <li>Google Corporations. 2022-2023</li>
+                        <ul>
+                            <li>Web Desing Mobile</li>
+                        </ul>
+                    <li>Google Gemini. 2024-2025</li>
+                        <ul>
+                            <li>Programação Back-End: C, C++ e Java.</li>
+                        </ul>
+                </ol>
+            
+        </section>
+
+         <section class="botao">
+                 <h3 class="fonteTexto"><a href="">Conferir Experiências detalhadamente</a></h3>
+         </section>
+           
+         <section class="contato">
+            <h2 class="fonteTitulo">Contato</h2>
+
+            <h3 class="fonteTexto"><i class="bi bi-geo-alt"></i> Rua Flight 122, Bairro Cyber Segundo - Pixel City </h3>
+            <h3 class="fonteTexto"> <a href="https://www.google.com/gmail/about/signup_complete.html" target="_blank"><i class="bi bi-envelope"></i> LumiBubblegum@RoMail.com</a></h3>
+            <h3 class="fonteTexto"><a href="https://web.whatsapp.com/" target="_blank"><i class="bi bi-telephone"></i> 01 0101 1101</a></h3>
+         </section>
 
     </main>
 
