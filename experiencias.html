@@ -1,10 +1,411 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Currículo - Início</title>
+
+    <link rel="icon" type="image/x-icon" href="Imagens/Logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap" rel="stylesheet">
+    <!-- Fonte Titulo -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Fonte Texto -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <style>
+        .fonteTitulo {
+            font-family: "Bowlby One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        /* Fonte Titulo */
+
+
+        .fonteTexto {
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            margin: 0 auto;
+            width: 80%;
+            padding: 2% 0;
+            line-height: 1.5;
+            background-color: rgba(251, 207, 213, 0.896);
+
+            p {
+                text-indent: 20px;
+                ;
+            }
+        }
+
+        main {
+
+            background-color: rgba(240, 255, 252, 0.622);
+            padding: 2%;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px rgb(112, 108, 110);
+            margin-top: 2%;
+        }
+
+        .titulo {
+            text-align: center;
+            font-size: 25px;
+
+            color: rgb(253, 174, 186);
+            text-shadow: 1px 1px 2px rgb(174, 95, 113);
+
+            margin-bottom: 2%;
+        }
+
+        h2 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        #introducao {
+
+            display: flex;
+            justify-content: space-evenly;
+            margin: 2%;
+
+            .foto {
+
+                width: 40%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    border-radius: 50%;
+                    border: 10px solid white;
+                    width: 90%;
+                    height: 90%;
+
+                }
+            }
+
+            .experiencia {
+                width: 60%;
+                padding: 15px;
+
+                ol {
+                    margin-left: 40px;
+                }
+
+                ul {
+                    margin-left: 20px;
+                    margin-bottom: 10px;
+                }
+
+                .negrito {
+                    font-weight: bold;
+                }
+            }
+
+        }
+
+        #quantificacao {
+            border-top: 2px dotted gray;
+            margin: 20px;
+            padding: 15px;
+
+            table {
+                margin-top: 2%;
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            table,
+            th,
+            td {
+                border: 2px solid black;
+            }
+
+            th {
+                background-color: rgb(253, 174, 186);
+            }
+
+            td {
+                text-align: center;
+            }
+
+        }
+
+        #pessoal {
+            border-top: 2px dotted gray;
+            margin: 20px;
+            padding: 15px;
+        }
+
+        .figuraEvideo {
+
+            display: flex;
+            justify-content: space-evenly;
+
+            .figura {
+                width: 35%;
+
+            }
+
+            .video {
+                width: 60%;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                iframe {
+                    border-radius: 20px;
+                }
+
+            }
+
+            img {
+                border: 3px solid rgb(253, 174, 186);
+                border-radius: 10px;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .voltar {
+
+
+            width: 25%;
+            border-radius: 15px;
+            background-color: rgba(251, 207, 213, 0.896);
+            margin-left: 20px;
+            margin-top: 2%;
+
+
+            a {
+                text-decoration: none;
+                color: rgb(255, 255, 255);
+
+            }
+
+            h3 {
+                padding: 10px;
+                text-align: center;
+
+            }
+
+        }
+
+        .voltar h3:hover {
+            background-color: rgb(253, 174, 186);
+            border-radius: 15px;
+            font-size: larger;
+        }
+
+         #menu {
+            display: flex;
+            justify-content: center;
+        }
+
+         header {
+            background-color: rgb(253, 174, 186) ;
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 50px;
+            padding: 5px;
+            gap: 2%;
+           
+        }
+
+        header a {
+            font-size: 28px;
+            margin:  10px 10px;
+            color: white;
+            text-decoration: none;
+        }
+
+        header a:hover {
+            text-shadow: 2px 2px  rgb(224, 135, 149) ;
+        }
+
+        #inicio a {
+            font-size: 40px;
+            color: rgb(253, 174, 186) ;
+            right: 2%;
+            bottom: 2%;
+            position: fixed;
+        }
+
+         html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
+
 <body>
+
+     <section id="menu">
+            <header>
+        
+                <a href="#" class="fonteTitulo">Inicio</a>
+                <a href="#introducao" class="fonteTitulo">Experiencias Detalhadas</a>
+                <a href="#quantificacao" class="fonteTitulo">Diferenças</a>
+                <a href="#pessoal" class="fonteTitulo">Vida Pessoal</a>
+
+        </header>
+        </section>
+
+        <section id="inicio">
+            <a href="#"><i class="bi bi-arrow-up-circle-fill"></i></a>
+        </section>
     
+
+    <main>
+        <section class="titulo">
+            <h1 class="fonteTitulo"> <i class="bi bi-briefcase"></i> Experiências Profissionais de</h1>
+            <h1 class="fonteTitulo">Lumina Bubblegum</h1>
+        </section>
+
+        <section id="introducao">
+
+            <div class="foto">
+                <img src="Imagens/LuminaExperiencia.png" alt="">
+            </div>
+
+            <div class="experiencia">
+                <h2 class="fonteTitulo">Experiencia Proficional Detalhada:</h2>
+
+                <ol class="fonteTexto">
+                    <li class="negrito">Estágio na ClearMe-up. 2017 - 2018</li>
+                    <ul>
+                        <li>Limpeza de robôs. Comecei como ajudante, finalizei como Chefe de Departamento.</li>
+                        <li>Manutenção de programação de robôs. Desenvolvedora dentro de uma equipe Senior.</li>
+                    </ul>
+
+                    <li class="negrito">IFOOD. 2019-2021</li>
+                    <ul>
+                        <li>Programação Front-End: HTML e CSS. Desenvolvedora Senior.</li>
+                        <li>Programação Back-End: C, C++ e Java. Chefe de Departamento.</li>
+                    </ul>
+                    <li class="negrito">Google Corporations. 2022-2023</li>
+                    <ul>
+                        <li>Web Desing Mobile. Chefe de Quality Assurance.</li>
+                    </ul>
+                    <li class="negrito">Google Gemini. 2024-2025</li>
+                    <ul>
+                        <li>Programação Back-End: C, C++ e Java. Especialista/Staff do setor Geral.</li>
+                    </ul>
+                </ol>
+            </div>
+        </section>
+
+        <section id="quantificacao">
+
+            <h2 class="fonteTitulo">Comparações com trabalhos Humanoides</h2>
+
+            <p class="fonteTexto">Para demosntrar meu desempenho em relação ao trabalho de humanos em trabalhos
+                realizados nas antigas empresas que trabalhei, criei uma tabela de produtividade que demonstra minha
+                eficiência: </p>
+
+            <table class="fonteTexto">
+                <thead>
+                    <tr>
+                        <th>Tarefa Executada</th>
+                        <th>Tempo Médio: Humano</th>
+                        <th>Tempo Médio: Robô</th>
+                        <th>Diferencial</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Manutenção de Sistemas</td>
+                        <td>8 horas</td>
+                        <td>15 minutos</td>
+                        <td>Alta Precisão</td>
+                    </tr>
+
+                    <tr>
+                        <td>Criação de Layout - HTML e CSS</td>
+                        <td>12 horas</td>
+                        <td>30 minutos</td>
+                        <td>Renderização em Tempo Real</td>
+                    </tr>
+
+                    <tr>
+                        <td>Teste de Qualidade - QA mobile</td>
+                        <td>6 horas</td>
+                        <td>10 minutos</td>
+                        <td>Varredura Completa</td>
+                    </tr>
+
+                    <tr>
+                        <td>Triagem de erros - Java</td>
+                        <td>4 horas</td>
+                        <td>7 minutos</td>
+                        <td>Debug Automático</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </section>
+
+        <section id="pessoal">
+            <h2 class="fonteTitulo">Vida Pessoal</h2>
+            <p class="fonteTexto">Antes de começar minha vida na programação, eu passava meu tempo em atividades
+                relacionas a música e dança. Porém, para um robô dançar é meio complicado, e comecei a sentir muitas
+                dores nas ferrugens.</p>
+            <p class="fonteTexto">Então com isso, parei de dançar e comecei a procurar outro hobbie. Nesse periodo que
+                eu descobri a programação e me encontrei! Agora vivo a vida programando, e claro, sempre ouvindo música.
+            </p>
+        </section>
+
+        <section class="figuraEvideo">
+            <div class="figura">
+                <figure>
+                    <img src="Imagens/LuminaMusica.png" alt="">
+                </figure>
+
+            </div>
+
+            <div class="video">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/PrYfOzRYwFc?si=EGpIevS042zgX2XN"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+        </section>
+
+        <section class="voltar">
+            <div>
+                <h3 class="fonteTexto"><a href="index.html">Voltar a Página Inicial</a></h3>
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+
+
 </body>
+
 </html>
