@@ -159,10 +159,10 @@
             display: flex;
             justify-content: space-evenly;
 
-            .figura {
+           /*  .figura {
                 width: 35%;
 
-            }
+            } */
 
             .video {
                 width: 60%;
@@ -176,12 +176,41 @@
                 }
 
             }
-
+/* 
             img {
                 border: 3px solid rgb(253, 174, 186);
                 border-radius: 10px;
                 width: 100%;
                 height: 100%;
+            }  */
+
+            figure {
+            justify-content: center;
+            border: thin #c0c0c0 solid;
+            border-radius: 5px;
+            display: flex;
+            flex-flow: column;
+            padding: 5px;
+            max-width: 900px;
+            margin: auto;
+            width: 350px;
+            height: 350px;
+            box-shadow: 0px 0px 4px rgb(174, 95, 113);
+            }
+
+            img {
+            max-width: 100%;
+            max-height: 100%;
+            border: 2px solid  rgb(253, 174, 186);
+            }
+
+            figcaption {
+            background-color: rgb(253, 174, 186);
+            color: #fff;
+            font: italic smaller sans-serif;
+            padding: 3px;
+            text-align: center;
+            
             }
         }
 
@@ -250,6 +279,11 @@
             right: 2%;
             bottom: 2%;
             position: fixed;
+            
+        }
+
+        #inicio a:hover {
+           color: rgba(253, 174, 186, 0.463) ;
         }
 
          html {
@@ -327,8 +361,8 @@
                 <thead>
                     <tr>
                         <th>Tarefa Executada</th>
-                        <th>Tempo Médio: Humano</th>
-                        <th>Tempo Médio: Robô</th>
+                        <th>Tempo médio: Humano</th>
+                        <th>Meu tempo médio</th>
                         <th>Diferencial</th>
                     </tr>
                 </thead>
@@ -380,6 +414,7 @@
             <div class="figura">
                 <figure>
                     <img src="Imagens/LuminaMusica.png" alt="">
+                    <figcaption>Amo Música POP</figcaption>
                 </figure>
 
             </div>
